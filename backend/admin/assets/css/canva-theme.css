@@ -1,0 +1,273 @@
+/* Custom CSS untuk tema Ulasan Canva */
+
+/* Warna utama Canva */
+:root {
+  --canva-purple: #7d2ae8;
+  --canva-blue: #00c4cc;
+  --canva-pink: #ff6b9d;
+  --canva-orange: #ff6900;
+  --canva-green: #36b37e;
+  --canva-gray: #f5f5f5;
+  --canva-dark: #2c2c2c;
+}
+
+/* Override warna primary */
+.btn-primary {
+  background-color: var(--canva-purple);
+  border-color: var(--canva-purple);
+}
+
+.btn-primary:hover {
+  background-color: #6a24c4;
+  border-color: #6a24c4;
+}
+
+/* Badge styling */
+.badge-info {
+  background-color: var(--canva-blue);
+}
+
+.badge-success {
+  background-color: var(--canva-green);
+}
+
+.badge-warning {
+  background-color: var(--canva-orange);
+}
+
+.badge-danger {
+  background-color: var(--canva-pink);
+}
+
+/* Card styling */
+.card-box {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(125, 42, 232, 0.1);
+  border: none;
+}
+
+/* Sidebar styling */
+.left-side-menu {
+  background: linear-gradient(
+    135deg,
+    var(--canva-purple) 0%,
+    var(--canva-blue) 100%
+  );
+}
+
+.left-side-menu .metismenu > li > a {
+  color: white;
+}
+
+.left-side-menu .metismenu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Navbar styling */
+.navbar-custom {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.table th {
+  background-color: var(--canva-gray);
+  color: var(--canva-dark);
+  font-weight: 600;
+}
+
+.table-bordered {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Page title styling */
+.page-title {
+  color: var(--canva-purple);
+  font-weight: 700;
+}
+
+/* Form styling */
+.form-control:focus {
+  border-color: var(--canva-purple);
+  box-shadow: 0 0 0 0.2rem rgba(125, 42, 232, 0.25);
+}
+
+/* Breadcrumb styling */
+.breadcrumb-item.active {
+  color: var(--canva-purple);
+}
+
+/* Logo container styling */
+.logo-box {
+  background: linear-gradient(
+    135deg,
+    var(--canva-purple) 0%,
+    var(--canva-blue) 100%
+  );
+}
+
+/* Admin login form styling */
+.admin-text {
+  background: linear-gradient(
+    135deg,
+    var(--canva-purple) 0%,
+    var(--canva-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Search box styling */
+.app-search .form-control {
+  border-radius: 25px;
+  background-color: var(--canva-gray);
+}
+
+/* Menu title styling */
+.menu-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animation untuk hover effects */
+.nav-menu li a,
+.badge,
+.btn {
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  transform: translateY(-2px);
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+/* Rating stars styling */
+.rating-stars {
+  color: var(--canva-orange);
+}
+
+/* Status indicators */
+.status-positive {
+  color: var(--canva-green);
+  font-weight: 600;
+}
+
+.status-negative {
+  color: var(--canva-pink);
+  font-weight: 600;
+}
+
+.status-neutral {
+  color: var(--canva-blue);
+  font-weight: 600;
+}
+
+/* FORCE OVERRIDE - Custom Login Background */
+html body.authentication-bg-pattern {
+  background: #ffffff !important;
+  background-image: none !important;
+  background-color: #ffffff !important;
+  min-height: 100vh !important;
+}
+
+html body.authentication-bg-pattern::before,
+html body.authentication-bg-pattern::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* FORCE OVERRIDE - bg-pattern class */
+html .bg-pattern {
+  background-image: none !important;
+  background: white !important;
+  background-color: white !important;
+}
+
+html .card.bg-pattern {
+  background: white !important;
+  background-image: none !important;
+  background-color: white !important;
+}
+
+/* Login Card Enhancements - Simple */
+body.authentication-bg-pattern .card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Login Form Styling - Simple */
+.authentication-bg-pattern .form-control {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.authentication-bg-pattern .form-control:focus {
+  background: white;
+  border-color: var(--canva-purple);
+  box-shadow: 0 0 0 0.2rem rgba(125, 42, 232, 0.25);
+}
+
+/* Login Button Enhancement - Simple */
+.authentication-bg-pattern .btn-primary {
+  background: var(--canva-purple);
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.authentication-bg-pattern .btn-primary:hover {
+  background: #6a24c4;
+}
+
+/* Logo Container Enhancement */
+.authentication-bg-pattern .text-center img {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.authentication-bg-pattern .text-center img:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced Admin Text */
+.authentication-bg-pattern .admin-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Form Labels */
+.authentication-bg-pattern label {
+  color: var(--canva-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Password Toggle Button */
+.authentication-bg-pattern .input-group-append .btn {
+  background: var(--canva-gray);
+  border: 2px solid transparent;
+  border-radius: 0 10px 10px 0;
+  color: var(--canva-dark);
+}
+
+.authentication-bg-pattern .input-group-append .btn:hover {
+  background: var(--canva-purple);
+  color: white;
+}
