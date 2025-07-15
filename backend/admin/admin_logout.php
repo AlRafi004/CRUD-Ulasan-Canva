@@ -1,5 +1,3 @@
-<!-- Secara keseluruhan, halaman ini akan menampilkan pesan logout
-setelah administrator keluar dari sistem, dan menyediakan tautan untuk kembali ke halaman login atau beranda. -->
 <!DOCTYPE html>
 <html lang="en">
     
@@ -7,8 +5,8 @@ setelah administrator keluar dari sistem, dan menyediakan tautan untuk kembali k
         <meta charset="utf-8" />
         <title>Logout - Ulasan Canva Admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
+        <meta content="Ulasan Canva Admin Logout Page" name="description" />
+        <meta content="CRUD Ulasan Canva" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
@@ -17,76 +15,217 @@ setelah administrator keluar dari sistem, dan menyediakan tautan untuk kembali k
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     </head>
 
     <style>
-        .link:hover {
-            text-decoration: underline;
+        body {
+            font-family: "Rubik", sans-serif;
+            background: linear-gradient(135deg, #7d2ae8 0%, #5a1fb3 50%, #00c4cc 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logout-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .logout-card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .logout-icon {
+            font-size: 80px;
+            color: #28a745;
+            margin-bottom: 30px;
+            animation: fadeInScale 1s ease-out;
+        }
+        
+        .logout-title {
+            color: #7d2ae8;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: "Rubik", sans-serif;
+        }
+        
+        .logout-message {
+            color: #6c757d;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .logout-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-logout {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 180px;
+            justify-content: center;
+        }
+        
+        .btn-login {
+            background: linear-gradient(135deg, #7d2ae8 0%, #5a1fb3 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(125, 42, 232, 0.3);
+        }
+        
+        .btn-login:hover {
+            background: linear-gradient(135deg, #00c4cc 0%, #008a94 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 196, 204, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .btn-home {
+            background: linear-gradient(135deg, #00c4cc 0%, #008a94 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 196, 204, 0.3);
+        }
+        
+        .btn-home:hover {
+            background: linear-gradient(135deg, #7d2ae8 0%, #5a1fb3 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(125, 42, 232, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo-container {
+            margin-bottom: 30px;
+        }
+        
+        .logo-text {
+            color: #7d2ae8;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+            font-family: "Rubik", sans-serif;
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logout-card {
+                padding: 30px 20px;
+                margin: 0 10px;
+            }
+            
+            .logout-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-logout {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .logout-title {
+                font-size: 24px;
+            }
+            
+            .logout-icon {
+                font-size: 60px;
+            }
         }
     </style>
 
-    <body class="authentication-bg authentication-bg-pattern">
-
-        <div class="account-pages mt-5 mb-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
-                        <div class="card bg-pattern">
-
-                            <div class="card-body p-4">
-                                
-                                <div class="text-center w-75 m-auto">
-                                    <a href="admin_logout.php">
-                                        <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
-                                    </a>
-                                </div>
-
-                                <div class="text-center">
-                                    <div class="mt-4">
-                                        <div class="logout-checkmark">
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                                                <circle class="path circle" fill="none" stroke="#4bd396" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                                                <polyline class="path check" fill="none" stroke="#4bd396" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <h3>See you again !</h3>
-
-                                    <p class="text-muted font-13"> You are now successfully sign out. </p>
-                                </div>
-
-                                <div class="row mt-3">
-                                    <div class="col-12 text-center">
-                                        <p>Back to <a href="index.php" class="text-primary ml-1 link"><b>Log In</b></a> OR <a href="../../index.php" class="text-primary ml-1 link"><b>HomePage</b></a></p>
-                                    </div> <!-- end col -->
-                                </div>
-
-                            </div> <!-- end card-body -->
-                        </div>
-                        <!-- end card -->
-
-                        
-                        <!-- end row -->
-
-                    </div> <!-- end col -->
+    <body>
+        <div class="logout-container">
+            <div class="logout-card">
+                <div class="logo-container">
+                    <h3 class="logo-text">🎨 ULASAN CANVA</h3>
                 </div>
-                <!-- end row -->
+                
+                <div class="logout-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                
+                <h2 class="logout-title">Logout Berhasil!</h2>
+                <p class="logout-message">
+                    Anda telah berhasil keluar dari sistem admin Ulasan Canva. 
+                    Terima kasih telah menggunakan platform kami.
+                </p>
+                
+                <div class="logout-buttons">
+                    <a href="index.php" class="btn-logout btn-login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login Kembali
+                    </a>
+                    
+                    <a href="../../index.php" class="btn-logout btn-home">
+                        <i class="fas fa-home"></i>
+                        Ke Beranda
+                    </a>
+                </div>
             </div>
-            <!-- end container -->
         </div>
-        <!-- end page -->
-
-
-        <?php include('assets/inc/footer1.php');?>
-
-        <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
 
         <!-- App js -->
+        <script src="assets/js/vendor.min.js"></script>
         <script src="assets/js/app.min.js"></script>
         
+        <script>
+        // Auto redirect after 10 seconds
+        let countdown = 10;
+        const countdownText = document.createElement('p');
+        countdownText.style.color = '#6c757d';
+        countdownText.style.fontSize = '14px';
+        countdownText.style.marginTop = '20px';
+        
+        function updateCountdown() {
+            countdownText.innerHTML = `Akan diarahkan ke halaman login dalam ${countdown} detik...`;
+            countdown--;
+            
+            if (countdown < 0) {
+                window.location.href = 'index.php';
+            }
+        }
+        
+        document.querySelector('.logout-card').appendChild(countdownText);
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        </script>
     </body>
 
 </html>
