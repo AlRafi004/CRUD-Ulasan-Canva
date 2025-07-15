@@ -47,6 +47,9 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             max-width: 500px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .logout-icon {
@@ -54,6 +57,9 @@
             color: #28a745;
             margin-bottom: 30px;
             animation: fadeInScale 1s ease-out;
+            text-align: center;
+            display: block;
+            width: 100%;
         }
         
         .logout-title {
@@ -62,6 +68,8 @@
             font-weight: bold;
             margin-bottom: 15px;
             font-family: "Rubik", sans-serif;
+            text-align: center;
+            width: 100%;
         }
         
         .logout-message {
@@ -69,6 +77,8 @@
             font-size: 18px;
             margin-bottom: 40px;
             line-height: 1.6;
+            text-align: center;
+            width: 100%;
         }
         
         .logout-buttons {
@@ -123,6 +133,8 @@
         
         .logo-container {
             margin-bottom: 30px;
+            text-align: center;
+            width: 100%;
         }
         
         .logo-text {
@@ -131,6 +143,7 @@
             font-weight: bold;
             margin: 0;
             font-family: "Rubik", sans-serif;
+            text-align: center;
         }
         
         @keyframes fadeInScale {
@@ -166,6 +179,9 @@
             
             .logout-icon {
                 font-size: 60px;
+                text-align: center;
+                display: block;
+                width: 100%;
             }
         }
     </style>
