@@ -273,16 +273,6 @@ error_reporting(E_ALL);
    # Create Pull Request di GitHub
    ```
 
-### Code Review Checklist
-
-- [ ] Code follows PSR-12 standards
-- [ ] All functions have proper documentation
-- [ ] Security best practices implemented
-- [ ] Responsive design tested
-- [ ] No console errors in browser
-- [ ] Database queries use prepared statements
-- [ ] Error handling implemented
-
 ---
 
 ## 👨‍💻 Author
