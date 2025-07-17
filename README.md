@@ -1,13 +1,31 @@
-﻿# 🎨 CRUD Ulasan Canva
+<div align="center">
+
+# **CRUD Ulasan Canva**
+================================================================================
 
 **Platform Review Management untuk Canva dengan Analisis Sentimen**
 
-Sistem manajemen ulasan berbasis web yang memungkinkan admin untuk mengelola review pengguna Canva dengan fitur CRUD lengkap, pagination, dan analisis sentimen otomatis.
+Sistem manajemen ulasan berbasis web yang memungkinkan admin untuk mengelola review pengguna Canva  
+dengan fitur CRUD lengkap, pagination, dan analisis sentimen otomatis.
 
-[![GitHub](https://img.shields.io/badge/GitHub-CRUD--Ulasan--Canva-purple?style=for-the-badge&logo=github)](https://github.com/AlRafi004/CRUD-Ulasan-Canva)
-[![PHP](https://img.shields.io/badge/PHP-8.2.12-blue?style=for-the-badge&logo=php)](https://php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)](https://mysql.com)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.1.3-purple?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com)
+<br/>
+
+<a href="https://github.com/AlRafi004/CRUD-Ulasan-Canva">
+  <img src="https://img.shields.io/badge/GitHub-CRUD--Ulasan--Canva-purple?style=for-the-badge&logo=github" />
+</a>
+<a href="https://php.net">
+  <img src="https://img.shields.io/badge/PHP-8.2.12-blue?style=for-the-badge&logo=php" />
+</a>
+<a href="https://mysql.com">
+  <img src="https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql" />
+</a>
+<a href="https://getbootstrap.com">
+  <img src="https://img.shields.io/badge/Bootstrap-4.1.3-purple?style=for-the-badge&logo=bootstrap" />
+</a>
+
+</div>
+
+---
 
 ## 📋 Deskripsi Project
 
