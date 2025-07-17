@@ -1,12 +1,9 @@
 <div align="center">
 
 # **CRUD Ulasan Canva**
-================================================================================
+==========================================================================
 
-**Platform Review Management untuk Canva dengan Analisis Sentimen**
-
-Sistem manajemen ulasan berbasis web yang memungkinkan admin untuk mengelola review pengguna Canva  
-dengan fitur CRUD lengkap, pagination, dan analisis sentimen otomatis.
+CRUD Ulasan Canva adalah aplikasi web yang dirancang untuk mengelola ulasan pengguna terhadap platform Canva. Sistem ini mengintegrasikan analisis sentimen untuk mengkategorikan ulasan menjadi Positif, Negatif, atau Netral, serta menyediakan interface admin yang modern dan user-friendly.
 
 <br/>
 
@@ -27,11 +24,7 @@ dengan fitur CRUD lengkap, pagination, dan analisis sentimen otomatis.
 
 ---
 
-## 📋 Deskripsi Project
-
-CRUD Ulasan Canva adalah aplikasi web yang dirancang untuk mengelola ulasan pengguna terhadap platform Canva. Sistem ini mengintegrasikan analisis sentimen untuk mengkategorikan ulasan menjadi Positif, Negatif, atau Netral, serta menyediakan interface admin yang modern dan user-friendly.
-
-### ✨ Fitur Utama
+## ✨ Fitur Utama
 
 - 🏠 **Homepage Modern** - Landing page dengan desain Canva branding
 - 👤 **Sistem Autentikasi** - Login admin yang aman dengan session management
@@ -42,6 +35,8 @@ CRUD Ulasan Canva adalah aplikasi web yang dirancang untuk mengelola ulasan peng
 - 📤 **Export Functionality** - Export data individual dan bulk
 - 🎨 **Modern UI/UX** - Desain responsif dengan Canva color scheme
 - 🔍 **Search & Filter** - Pencarian dan filter data ulasan
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -55,6 +50,7 @@ CRUD Ulasan Canva adalah aplikasi web yang dirancang untuk mengelola ulasan peng
 | **Typography** | Rubik Font              | Google Fonts |
 | **Server**     | Apache (XAMPP)          | 2.4.58       |
 
+---
 
 ## 📁 Struktur Project
 
@@ -72,27 +68,29 @@ CRUD-Ulasan-Canva/
 │   ├── 📁 fonts/                   # Font files
 │   └── 📁 sass/                    # SCSS source files
 │
-├── 📁 backend/                     # Backend application
-│   └── 📁 admin/                   # Admin panel
-│       ├── 📄 index.php            # Admin login
-│       ├── 📄 admin_view_reviews.php    # Daftar ulasan
+├── 📁 backend/                              # Backend application
+│   └── 📁 admin/                            # Admin panel
+│       ├── 📄 index.php                     # Admin login
+│       ├── 📄 admin_view_reviews.php        # Daftar ulasan
 │       ├── 📄 admin_view_single_review.php  # Detail ulasan
-│       ├── 📄 admin_add_new_review.php     # Tambah ulasan
-│       ├── 📄 admin_edit_review.php       # Edit ulasan
-│       ├── 📄 admin_delete_review.php     # Hapus ulasan
-│       ├── 📄 admin_export_review.php     # Export single
-│       ├── 📄 admin_export_all_reviews.php # Export all
-│       └── 📁 assets/              # Admin assets
-│           ├── 📁 css/             # Admin stylesheets
-│           ├── 📁 js/              # Admin JavaScript
-│           ├── 📁 images/          # Admin images
-│           └── 📁 inc/             # Include files
-│               ├── 📄 config.php   # Database config
-│               ├── 📄 checklogin.php # Auth checker
-│               └── 📄 nav.php      # Navigation
+│       ├── 📄 admin_add_new_review.php      # Tambah ulasan
+│       ├── 📄 admin_edit_review.php         # Edit ulasan
+│       ├── 📄 admin_delete_review.php       # Hapus ulasan
+│       ├── 📄 admin_export_review.php       # Export single
+│       ├── 📄 admin_export_all_reviews.php  # Export all
+│       └── 📁 assets/                       # Admin assets
+│           ├── 📁 css/                      # Admin stylesheets
+│           ├── 📁 js/                       # Admin JavaScript
+│           ├── 📁 images/                   # Admin images
+│           └── 📁 inc/                      # Include files
+│               ├── 📄 config.php            # Database config
+│               ├── 📄 checklogin.php        # Auth checker
+│               └── 📄 nav.php               # Navigation
 │
 └── 📁 DATABASE FILE/               # Additional DB files
 ```
+
+---
 
 ## ⚡ Quick Start
 
@@ -146,6 +144,7 @@ CRUD-Ulasan-Canva/
    - **Homepage**: `http://localhost/CRUD-Ulasan-Canva/`
    - **Admin Panel**: `http://localhost/CRUD-Ulasan-Canva/backend/admin/`
 
+---
 
 ## 🔧 Fitur CRUD Detail
 
@@ -179,6 +178,8 @@ CRUD-Ulasan-Canva/
 - **Single Export**: Export detail ulasan individual (TXT format)
 - **Bulk Export**: Export semua data dengan statistik komprehensif
 - **Formatted Output**: Export terstruktur dengan metadata lengkap
+
+---
 
 ## 🐛 Troubleshooting
 
@@ -241,6 +242,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ```
 
+---
+
 ## 🤝 Contributing
 
 ### Development Workflow
@@ -280,25 +283,10 @@ error_reporting(E_ALL);
 - [ ] Database queries use prepared statements
 - [ ] Error handling implemented
 
-## 👨‍💻 Author
-
-**AlRafi004** - _Full Stack Developer_
-
-- GitHub: [@AlRafi004](https://github.com/AlRafi004)
-- Project: [CRUD-Ulasan-Canva](https://github.com/AlRafi004/CRUD-Ulasan-Canva)
-
-## 🙏 Acknowledgments
-
-- **Canva** - Inspirasi design dan color scheme
-- **Bootstrap Team** - Framework CSS yang reliable
-- **Font Awesome** - Icon library yang comprehensive
-- **Google Fonts** - Typography (Rubik font family)
-- **PHP Community** - Documentation dan best practices
-- **MySQL** - Database management system
-- **XAMPP Team** - Local development environment
-
 ---
 
-**⭐ Jika project ini membantu Anda, jangan lupa berikan star di GitHub repository!**
+## 👨‍💻 Author
 
-**🚀 Happy Coding!**
+M. Hadianur Al Rafi
+
+---
